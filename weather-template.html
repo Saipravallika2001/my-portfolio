@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Title | Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/project-page.css" />
+</head>
+
+<body class="is-preload project-page">
+
+  <!-- Minimalist nav (already on your site) -->
+  <header id="navbar">
+    <nav class="container">
+      <ul class="nav-links">
+        <li><a href="/portfolio/#banner">HOME</a></li>
+        <li><a href="/portfolio/#about">ABOUT</a></li>
+        <li><a href="/portfolio/#experience">EXPERIENCE</a></li>
+        <li><a href="/portfolio/#projects">PROJECTS</a></li>
+        <li><a href="/portfolio/#skills">SKILLS</a></li>
+        <li><a href="/portfolio/#contact">CONTACT</a></li>
+      </ul>      
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="project-title">Real-Time Weather Data Pipeline</h1>
+    <hr class="divider">
+
+    <!-- LINKS -->
+    <section>
+      <h2>LINKS</h2>
+      <ul class="link-row">
+        <li><a href="#" target="_blank" rel="noopener">GitHub Repo</a></li>
+      </ul>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section>
+      <h2>OVERVIEW</h2>
+      <p>
+        The Real-Time Weather Data Pipeline is an end-to-end data engineering solution that demonstrates how to collect, process, store, and visualize live weather information in real time. It integrates multiple technologies including Apache Kafka, Spark Streaming, PostgreSQL, and Streamlit to create a robust and scalable streaming architecture. Data is fetched from an external weather API, processed using Spark, stored in a relational database, and displayed through an interactive dashboard. All components are containerized using Docker Compose, allowing seamless deployment and orchestration of services in a production-like environment.
+
+
+      </p>
+    </section>
+
+    <!-- KEY ACHIEVEMENTS -->
+    <section>
+      <h2>KEY ACHIEVEMENTS</h2>
+      <ul class="bullet-list">
+        <li>Built a real-time data pipeline that collects and processes weather data from 50+ cities, integrating Kafka, Spark Streaming, and PostgreSQL for seamless end-to-end flow.</li>
+        <li>Achieved low-latency ingestion and transformation, maintaining an end-to-end data flow time under 5 seconds from API fetch to database insertion.</li>
+        <li>Developed a responsive Streamlit dashboard that automatically refreshes every 10 seconds, allowing users to view real-time weather metrics such as temperature, humidity, and alerts.</li>
+        <li>Containerized and deployed 6+ integrated services (Kafka, Spark, PostgreSQL, pgAdmin, Streamlit, Zookeeper) using Docker Compose, enabling full system startup in under 2 minutes.</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
