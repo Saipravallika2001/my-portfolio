@@ -4,7 +4,20 @@
   <title>Sai Pravallika Maguluri | Portfolio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  
+  <meta name="description" content="Sai Pravallika Maguluri — Data Engineer specializing in real-time data pipelines, Kafka, Spark, Airflow, and AWS." />
+  <meta name="theme-color" content="#242943" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sai Pravallika Maguluri | Portfolio" />
+  <meta property="og:description" content="Data Engineer • Real Time Data Processing • Cloud & Big Data Technologies" />
+  <meta property="og:url" content="https://saipravallika2001.github.io/my-portfolio/" />
+  <meta property="og:image" content="assets/images/health.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sai Pravallika Maguluri | Portfolio" />
+  <meta name="twitter:description" content="Data Engineer • Real Time Data Processing • Cloud & Big Data Technologies" />
+  <meta name="twitter:image" content="assets/images/health.png" />
+  <link rel="canonical" href="https://saipravallika2001.github.io/my-portfolio/" />
+<link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <script>
@@ -20,7 +33,7 @@
 
  <!-- MINIMALIST STICKY NAV -->
 <header id="navbar">
-  <nav class="container">
+  <nav class="container" role="navigation" aria-label="Primary">
     <ul class="nav-links">
       <!-- always visible -->
       <li><a href="#banner">HOME</a></li>
@@ -28,7 +41,7 @@
 
       <!-- "More ▾" toggle (only shows ≤ 600 px) -->
       <li class="mobile-more">
-        <button class="nav-toggle" aria-expanded="false">MORE ▾</button>
+        <button class="nav-toggle" aria-controls="navbar" aria-expanded="false">MORE ▾</button>
       </li>
 
       <!-- extra links (hidden on mobile until toggle) -->
@@ -63,25 +76,30 @@
           <ul>
             <li>
               <a href="mailto:saipravallika005@gmail.com"
-                 class="icon solid fa-envelope"
+                  class="icon solid fa-envelope" aria-label="Email"
                  title="Email"
                  target="_blank" rel="noopener noreferrer"></a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/sai-pravallika-maguluri/"
-                 class="icon brands fa-linkedin"
+                  class="icon brands fa-linkedin" aria-label="LinkedIn"
                  title="LinkedIn"
                  target="_blank" rel="noopener noreferrer"></a>
             </li>
             <li>
               <a href="https://github.com/Saipravallika2001"
-                 class="icon brands fa-github"
+                  class="icon brands fa-github" aria-label="GitHub"
                  title="GitHub"
                  target="_blank" rel="noopener noreferrer"></a>
             </li>
             
           </ul>
-        </nav>
+        
+        <div class="cta-wrap">
+          <a href="#contact" class="button primary big" aria-label="Jump to contact section">Contact Me</a>
+        </div>
+
+</nav>
       </div>
     </div>
   </section>
@@ -140,7 +158,7 @@
     
           <!-- Right column: profile image -->
           <div class="about-image">
-            <img src="assets/images/yourphoto.jpg" alt="Profile placeholder" />
+            <img loading="lazy" decoding="async" src="assets/images/yourphoto.jpg" alt="Profile placeholder" />
           </div>
     
         </div>
@@ -261,7 +279,7 @@
         <div class="tiles">
           <article>
             <span class="image">
-              <img src="assets/images/health.png"
+              <img loading="lazy" decoding="async" src="assets/images/health.png"
                    alt="Project 1">
             </span>
           
@@ -286,7 +304,7 @@
 
           <article>
             <span class="image">
-              <img src="assets/images/weather.png" alt="Project 2">
+              <img loading="lazy" decoding="async" src="assets/images/weather.png" alt="Project 2">
             </span>
             <div class="content">
               <h3>Real-Time Weather Data Pipeline</h3>
@@ -323,7 +341,7 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
         <span class="icon" title="Python"><i class="devicon-python-plain colored"></i></span>
         <span class="icon" title="Java"><i class="devicon-java-plain colored"></i></span>
         <span class="icon" title="SQL"><i class="devicon-mysql-plain colored"></i></span>
-        <span class="icon" title="R Programming"><img src="assets/images/r.jpeg" alt="R" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="R Programming"><img loading="lazy" decoding="async" src="assets/images/r.jpeg" alt="R" style="height:32px; margin-right:8px;"></span>
         
       </div>
     </li>
@@ -332,14 +350,14 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
     <li class="skill-card">
       <h3>Data Engineering Tools</h3>
       <div class="icon-set">
-        <span class="icon" title="Apache Spark"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Spark" style="height:32px;"></span>
-        <span class="icon" title="Kafka"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" style="height:32px;"></span>
-        <span class="icon" title="Hadoop"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="Hadoop" style="height:32px;"></span>
-        <span class="icon" title="Apache Airflow"><img src="assets/images/airflow.png" alt="Airflow" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="PySpark"><img src="assets/images/pyspark.png" alt="Airflow" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="dbt"><img src="assets/images/dbt.jpeg" alt="Airflow" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="Spark streaming"><img src="assets/images/spark.jpeg" alt="Spark streaming" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="Databricks"><img src="assets/images/databrickslogo.png" alt="Databricks" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Apache Spark"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Spark" style="height:32px;"></span>
+        <span class="icon" title="Kafka"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" style="height:32px;"></span>
+        <span class="icon" title="Hadoop"><img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="Hadoop" style="height:32px;"></span>
+        <span class="icon" title="Apache Airflow"><img loading="lazy" decoding="async" src="assets/images/airflow.png" alt="Airflow" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="PySpark"><img loading="lazy" decoding="async" src="assets/images/pyspark.png" alt="Airflow" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="dbt"><img loading="lazy" decoding="async" src="assets/images/dbt.jpeg" alt="Airflow" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Spark streaming"><img loading="lazy" decoding="async" src="assets/images/spark.jpeg" alt="Spark streaming" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Databricks"><img loading="lazy" decoding="async" src="assets/images/databrickslogo.png" alt="Databricks" style="height:32px; margin-right:8px;"></span>
       </div>
     </li>
 
@@ -347,29 +365,29 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
       <h3>Cloud & DevOps</h3>
       <div class="icon-set">
         
-        <span class="icon" title="AWS S3"><img src="assets/images/s3.png" alt="AWS Glue" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="AWS Redshift"><img src="assets/images/redshift.png" alt="AWS Redshift" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="AWS Glue"><img src="assets/images/glue.png" alt="AWS Glue" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="Docker"><img src="assets/images/docker.png" alt="Docker" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="Git"><img src="assets/images/git.png" alt="Git" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="Agile Methodologies"><img src="assets/images/agile.png" alt="Agile Methodologies" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="AWS S3"><img loading="lazy" decoding="async" src="assets/images/s3.png" alt="AWS Glue" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="AWS Redshift"><img loading="lazy" decoding="async" src="assets/images/redshift.png" alt="AWS Redshift" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="AWS Glue"><img loading="lazy" decoding="async" src="assets/images/glue.png" alt="AWS Glue" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Docker"><img loading="lazy" decoding="async" src="assets/images/docker.png" alt="Docker" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Git"><img loading="lazy" decoding="async" src="assets/images/git.png" alt="Git" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Agile Methodologies"><img loading="lazy" decoding="async" src="assets/images/agile.png" alt="Agile Methodologies" style="height:32px; margin-right:8px;"></span>
       </div>
     </li>
     
     <li class="skill-card">
       <h3>Databases & Data Warehousing</h3>
       <div class="icon-set">
-        <span class="icon" title="PostgreSQL"><img src="assets/images/postgresql.png" alt="PostgreSQL" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="Amazon Redshift"><img src="assets/images/redshift.png" alt="Amazon Redshift" style="height:32px; margin-right:8px;"></span>        
+        <span class="icon" title="PostgreSQL"><img loading="lazy" decoding="async" src="assets/images/postgresql.png" alt="PostgreSQL" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Amazon Redshift"><img loading="lazy" decoding="async" src="assets/images/redshift.png" alt="Amazon Redshift" style="height:32px; margin-right:8px;"></span>        
       </div>
     </li>
 
     <li class="skill-card">
       <h3>Visualization</h3>
       <div class="icon-set">
-        <span class="icon" title="Tableau"><img src="assets/images/Tableau..png" alt="Tableau" style="height:32px; margin-right:8px;"></span>
-        <span class="icon" title="Power BI"><img src="assets/images/powerbi.jpeg" alt="Power BI" style="height:32px; margin-right:8px;"></span>        
-        <span class="icon" title="Streamlit"><img src="assets/images/streamlit.png" alt="Streamlit" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Tableau"><img loading="lazy" decoding="async" src="assets/images/Tableau..png" alt="Tableau" style="height:32px; margin-right:8px;"></span>
+        <span class="icon" title="Power BI"><img loading="lazy" decoding="async" src="assets/images/powerbi.jpeg" alt="Power BI" style="height:32px; margin-right:8px;"></span>        
+        <span class="icon" title="Streamlit"><img loading="lazy" decoding="async" src="assets/images/streamlit.png" alt="Streamlit" style="height:32px; margin-right:8px;"></span>
       </div>
     </li>
 
@@ -398,7 +416,7 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
            href="assets/certifications/Databricks - Generic.pdf"
            target="_blank" rel="noopener">
           <div class="cert-image">
-            <img src="assets/images/databricks.png"
+            <img loading="lazy" decoding="async" src="assets/images/databricks.png"
                  alt="Certification Placeholder">
           </div>
         </a>
@@ -410,7 +428,7 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
            href="#"
            target="_blank" rel="noopener">
           <div class="cert-image">
-            <img src="assets/images/ibm.jpeg"
+            <img loading="lazy" decoding="async" src="assets/images/ibm.jpeg"
                  alt="Certification Placeholder">
           </div>
         </a>
@@ -422,7 +440,7 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
            href="assets/certifications/data_analytics.pdf"
            target="_blank" rel="noopener">
           <div class="cert-image">
-            <img src="assets/images/google.jpeg"
+            <img loading="lazy" decoding="async" src="assets/images/google.jpeg"
                  alt="Certification Placeholder">
           </div>
         </a>
@@ -436,7 +454,7 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
            href="assets/certifications/Python.jpeg"
            target="_blank" rel="noopener">
           <div class="cert-image">
-            <img src="assets/images/nptel.jpeg"
+            <img loading="lazy" decoding="async" src="assets/images/nptel.jpeg"
                  alt="Certification Placeholder">
           </div>
         </a>
@@ -448,7 +466,7 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
            href="assets/certifications/automation_anywhere.pdf"
            target="_blank" rel="noopener">
           <div class="cert-image">
-            <img src="assets/images/automation.jpg"
+            <img loading="lazy" decoding="async" src="assets/images/automation.jpg"
                  alt="Certification Placeholder">
           </div>
         </a>
