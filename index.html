@@ -535,6 +535,40 @@ Docker Compose orchestrates all services including Kafka, Spark, PostgreSQL, and
       });
     });
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('#navbar .nav-links a[href^="#"]');
+  const sections = Array.from(navLinks).map(link => document.querySelector(link.getAttribute('href')));
+  const navHeight = document.querySelector('#navbar').offsetHeight;
+
+  function activateLink(id) {
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+    });
+  }
+
+  function onScroll() {
+    const scrollPos = window.scrollY + navHeight + 20;
+    let currentId = sections[0].id;
+
+    sections.forEach(section => {
+      if (section.offsetTop <= scrollPos) {
+        currentId = section.id;
+      }
+    });
+
+    // force last section active if at bottom
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
+      currentId = sections[sections.length - 1].id;
+    }
+
+    activateLink(currentId);
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+});
+</script>
     
     
   

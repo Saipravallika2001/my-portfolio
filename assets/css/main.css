@@ -5413,4 +5413,10 @@ html{ color-scheme: dark; }
     /* hide the pattern + SVG layer entirely */
     #banner-wrapper #overlay{ display:none !important; }
 }
+/* Highlight active nav link */
+#navbar .nav-links a.active {
+  background: #ffffff;
+  color: #242943 !important; /* dark text on white */
+  border-radius: 4px; /* optional */
+}
   
